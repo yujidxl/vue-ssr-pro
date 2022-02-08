@@ -1,6 +1,7 @@
 const VueSSRServerPlugin = require('vue-server-renderer/server-plugin');
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin');
 module.exports = {
+  publicPath: 'http://localhost:8080',
   configureWebpack: () => {
     const config = {
       client: {
